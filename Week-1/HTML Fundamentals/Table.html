@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#main{
+    margin: auto;
+    width: 10%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#main>div{
+    border:1px solid black
+}
+#one{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#two{
+    grid-row-start: 2;
+    grid-row-end:4;
+}
+</style>
+<body>
+    <div id="main">
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3</div>
+        <div id="four">4</div>
+        <div id="five">5</div>
+        <div id="six">6</div>
+
+
+    </div>
+    
+</body>
+</html>
