@@ -25,3 +25,28 @@ Q3. What are the primary keys and foreign keys in a relational database, and how
 Primary Keys uniquely identify records within a tables
 while foreign keys establish a relationships between
 tables by referencing the primary keysof another tables
+
+Q4.Explain the ACID properties in the context of database transactions.
+Acid Property ensures that transactions are processed reliably,accurately
+-Atomicity-It states that every transaction is treated as 
+single unit of work.It anything crashes then everything rollsback
+Atomicity prevents trasactions leaving from the database incomplete
+-Consistency-Database reamins consistent before and after the transactions
+-Isolation-Each transaction should be independent form each other
+so as to avoid any corruption
+-Durability-Durability ensures that if a transaction
+is completed it gets stored in non volatile storage
+
+
+Q5.Question 5: Describe the concept of indexing in a database. How does indexing improve query performance?
+Indexing used to improve the speed of data retreival operations
+Most effiecient indexing algorithms wil lmake sure the most 
+effiecient retreival operation and reduce 
+
+Question 6: Explain the concept of concurrency control, deadlocks in a multi-user database environment.
+concurrency control mechanisms ensure data consistency and prevent conflicts in a multi-user database environment by coordinating the execution of transactions. However, they can also introduce the risk of deadlocks, which occur when transactions are waiting indefinitely for each other. Effective management of concurrency control and deadlocks is essential for maintaining the reliability and performance of database systems in a concurrent environment.
+
+
+Question 7: Read about Database sharding and explain couple of real time examples where, why, how it this concept is used.?
+Sharding is a technique for distribute data or partition data horizontally
+Each shard contains subset of Data
