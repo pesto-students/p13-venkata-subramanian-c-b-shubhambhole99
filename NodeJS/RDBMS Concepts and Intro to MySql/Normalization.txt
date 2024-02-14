@@ -1,0 +1,27 @@
+Q1.
+1NF
+The program is already in it's first normal form
+we can say that because
+-Attribute name should be unique
+-Each column contains single value no seperated by commas so that ensures 
+Atomicity
+-Unified Data Type-Consistent Data types
+2NF
+We need to ensure to partial dependencies
+
+3NF
+
+-To eliminate any transitive dependencies we need to make sure that that one attribute 
+should not be retrievable form two or more places
+
+EmployeeID	EmployeeName	DepartmentID	DepartmentName	ManagerID	ManagerName
+101	John Doe	1	IT	201	Alice Smith
+
+in the example below we can find the department name from department id itself
+
+Q2.Bonus
+
+Q3. What are the primary keys and foreign keys in a relational database, and how do they establish relationships between tables?
+Primary Keys uniquely identify records within a tables
+while foreign keys establish a relationships between
+tables by referencing the primary keysof another tables
