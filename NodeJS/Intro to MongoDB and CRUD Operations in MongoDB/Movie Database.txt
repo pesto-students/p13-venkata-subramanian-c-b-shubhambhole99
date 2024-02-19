@@ -1,0 +1,36 @@
+1.use Movie Db
+2.
+db.createCollection("movies");
+db.createCollection("directors");
+db.createCollection("actors");
+
+3.
+-- Adding Actors
+db.actors.insertMany([
+  { name: "Leonardo DiCaprio", nationality: "American"},
+  { name: "Morgan Freeman", nationality: "American" },
+  { name: "Christian Bale", nationality: "British" },
+  // Add more actor documents...
+]);
+
+
+--Adding Directors
+db.directors.insertMany([
+  { name: "Christopher Nolan", nationality: "British"  },
+  { name: "Frank Darabont", nationality: "American" },
+  // Add more director documents...
+]);
+
+
+-- Adding movies with relation
+
+db.movies.insertMany([
+  { title: "Inception", releaseYear: 2010, genre: "Sci-Fi", director: ObjectId('65ce2a2610287f4feaf60a5e'), actors: [
+ObjectId('65ce29e410287f4feaf60a5b'),ObjectId('65ce29e410287f4feaf60a5c'),ObjectId('65ce29e410287f4feaf60a5d')] },
+  { title: "The Shawshank Redemption", releaseYear: 1994, genre: "Drama", director: ObjectId('65ce2a2610287f4feaf60a5e'), actors: [
+ObjectId('65ce29e410287f4feaf60a5b'),ObjectId('65ce29e410287f4feaf60a5c'),ObjectId('65ce29e410287f4feaf60a5d')] },
+  { title: "The Dark Knight", releaseYear: 2008, genre: "Action", director: ObjectId('65ce2a2610287f4feaf60a5f'), actors: [
+ObjectId('65ce29e410287f4feaf60a5b'),ObjectId('65ce29e410287f4feaf60a5c'),ObjectId('65ce29e410287f4feaf60a5d')] },
+  // Add more movie documents...
+]);
+
