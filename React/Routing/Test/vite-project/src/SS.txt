@@ -1,0 +1,35 @@
+import React, { createContext, useContext } from 'react';
+
+// Creating a context object
+const ValueContext = createContext();
+
+// Top-level component providing the context value
+function App() {
+  const value = 'Hello from App!'; // Value to be passed down
+
+  return (
+    // Providing the context value using the Provider
+    <ValueContext.Provider value={value}>
+      <IntermediateComponent />
+    </ValueContext.Provider>
+  );
+}
+
+// Intermediate component
+function IntermediateComponent() {
+  return (
+    <div>
+      <ChildComponent />
+    </div>
+  );
+}
+
+// Child component consuming the context value
+function ChildComponent() {
+  // Accessing the context value using useContext
+  const value = useContext(ValueContext);
+
+  return <div>{value}</div>;
+}
+
+export default App;
