@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-size: 40px;
+            background-color: black;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .bullet-points {
+            /* text-align: center; */
+        }
+
+        .bullet-points ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .bullet-points li {
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+
+        .bullet-points li::before {
+            content: '\2022'; /* Unicode character for a bullet point */
+            color: white;
+            display: inline-block;
+            width: 2em;
+            font-size: 30px;
+            margin-left: 3em;
+        }
+    </style>
+   
+</head>
+<body>
+    <div class="bullet-points">
+        <!-- <h1>Centered Bullet Points</h1> -->
+        <ul>
+            <li>Caffeine low stim pip</li>
+            <li>flip pip</li>
+            <li>sleep cycle pip</li>
+            <li>Just half WW</li>
+            <li>Music pip</li>
+        </ul>
+    </div>
+</body>
+</html>
